@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TH-BodyApp</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	<!--
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+	-->
+</head>
+<body>
+	<div class="container" ng-app="bodyApp">
+		<h1>TH-BodyApp</h1>
+		<ul class="list-group" ng-controller="ExercisesCtrl">
+			<li class="list-group-item" ng-repeat="exercise in exercises" touch>
+				<span class="badge">{{exercise.count}}</span>
+				<h4 class="list-group-item-heading">{{exercise.title}}</h4>
+				<p class="list-group-item-text">{{exercise.descr}}</p>
+			</li>
+		</ul>
+	</div>
+
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
